@@ -16,7 +16,7 @@
     height: min(80vh, 900px);
     min-height: 420px;
     position: relative;
-    background-image: url('@/assets/images/LEW02374.webp');
+    background-image: url('@/assets/images/banner.jpeg');
     background-size: cover;
     background-position: 60% 50%;
     background-repeat: no-repeat;
@@ -51,26 +51,26 @@
    - max px  - giới hạn trên để không quá to
 */
   .title-line.top {
-    font-size: clamp(100px, 6.5vw, 115px);
+    font-size: clamp(70px, 6.5vw, 75px);
   }
   .title-amp {
     display: inline-block;
     font-size: clamp(100px, 6.5vw, 115px);
     line-height: 0.9;
-    margin: clamp(-6px, -0.6vw, -12px) 0 clamp(-2px, -0.2vw, -4px) clamp(2px, 0.4vw, 8px);
+    margin: clamp(-14px, -0.6vw, -12px) 0 clamp(-2px, -0.2vw, -4px) clamp(2px, 0.4vw, 8px);
     text-shadow:
       0 2px 6px rgba(0, 0, 0, 0.35),
       0 0 1px rgba(0, 0, 0, 0.25);
   }
   .title-line.bottom {
-    font-size: clamp(100px, 6.5vw, 115px);
+    font-size: clamp(70px, 6.5vw, 75px);
     /* đẩy nhẹ sang phải để tạo bố cục lệch như mẫu */
     transform: translateX(clamp(30px, 1.5vw, 50px));
   }
 
   /* Khoảng cách dọc giữa các hàng cũng responsive */
   .title-line.top {
-    margin-bottom: clamp(2px, 0.6vw, 10px);
+    margin-bottom: clamp(2px, 0vw, 10px);
   }
   .title-amp {
     margin-bottom: clamp(0px, 0.2vw, 4px);

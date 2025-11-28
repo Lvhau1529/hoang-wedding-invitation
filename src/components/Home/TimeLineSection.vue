@@ -1,7 +1,7 @@
 <template>
   <div class="pb-8">
     <div class="h-[420px] relative">
-      <img src="@/assets/images/timeline.webp" alt="flower" class="w-full h-full object-cover" />
+      <img src="@/assets/images/timeline.jpeg" alt="flower" class="w-full h-full object-cover object-[50%_10%]" />
       <p
         class="text-center text-4xl text-white font-prata absolute bottom-3 left-1/2 -translate-x-1/2 z-1 italic"
       >
@@ -17,7 +17,7 @@
             <div class="max-w-[60px]">
               <img class="object-cover w-full h-full" :src="item.img" :alt="item.title" />
             </div>
-            <p class="flex-shrink-0 text-xl font-medium px-3.5">{{ item.time }}</p>
+            <p class="shrink-0 text-xl font-medium px-3.5">{{ item.time }}</p>
             <div>
               <p class="uppercase font-medium">{{ item.title }}</p>
               <p>{{ item.description }}</p>

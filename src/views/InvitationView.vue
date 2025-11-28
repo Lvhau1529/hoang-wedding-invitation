@@ -8,7 +8,7 @@
       <InvitationSection />
       <LocationSection />
       <TimeLineSection />
-      <!-- <AlbumSection /> -->
+      <AlbumSection />
       <ParticipantSection />
       <ThanksSection />
     </div>
@@ -24,10 +24,10 @@
   import InvitationSection from '@/components/Home/InvitationSection.vue'
   import LocationSection from '@/components/Home/LocationSection.vue'
   import TimeLineSection from '@/components/Home/TimeLineSection.vue'
-  // import AlbumSection from '@/components/Home/AlbumSection.vue'
+  import AlbumSection from '@/components/Home/AlbumSection.vue'
   import ParticipantSection from '@/components/Home/ParticipantSection.vue'
   import ThanksSection from '@/components/Home/ThanksSection.vue'
-  import heroBannerUrl from '@/assets/images/LEW02374.webp'
+  import heroBannerUrl from '@/assets/images/banner.jpeg'
 
   const loading = ref(true)
 

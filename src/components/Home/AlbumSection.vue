@@ -9,37 +9,18 @@
       yêu, niềm vui và những kỷ niệm không thể nào quên.
     </p>
 
-    <div class="mb-3 h-72">
-      <img
-        v-lazy="mainImage"
-        class="w-full h-full object-cover object-[50%_25%]"
-        alt="main-album"
-      />
-    </div>
-
-    <div class="grid grid-cols-2 grid-rows-2 gap-2 mb-3 h-90">
-      <div class="row-span-2">
+    <template v-for="(item, index) in albumRepresent" :key="item.id">
+      <div v-if="index <= 1" class="mb-3 h-72">
         <img
-          v-lazy="subImage1"
-          class="w-full h-full object-cover object-[60%_50%]"
-          alt="sub-album-1"
+          v-lazy="item.img"
+          class="w-full h-full object-cover object-[50%_10%]"
+          :alt="`album-image-${item.id}`"
         />
       </div>
-      <div>
-        <img v-lazy="subImage2" class="w-full h-full object-cover" alt="sub-album-2" />
-      </div>
-      <div class="col-start-2 row-start-2">
-        <img
-          v-lazy="subImage3"
-          class="w-full h-full object-cover object-[20%_20%]"
-          alt="sub-album-3"
-        />
-      </div>
-    </div>
-
+    </template>
     <div class="grid grid-cols-2 gap-2">
-      <template v-for="item in albumRepresent" :key="item.id">
-        <div :id="`album-${item.id}`" class="h-64">
+      <template v-for="(item, index) in albumRepresent" :key="item.id">
+        <div v-if="index > 1" :id="`album-${item.id}`" class="h-64">
           <img
             v-lazy="item.img"
             class="w-full h-full object-cover"
@@ -54,28 +35,18 @@
 
 <script setup lang="ts">
   import { ref } from 'vue'
-  import mainImage from '@/assets/images/LEW02189.webp'
-  import subImage1 from '@/assets/images/LEW02194.webp'
-  import subImage2 from '@/assets/images/LEW02331.webp'
-  import subImage3 from '@/assets/images/LEW02349.webp'
-  import img1 from '@/assets/images/LEW02486.webp'
-  import img2 from '@/assets/images/LEW02378.webp'
-  import img3 from '@/assets/images/LEW02507.webp'
-  import img4 from '@/assets/images/LEW02529.webp'
-  import img5 from '@/assets/images/LEW02646.webp'
-  import img6 from '@/assets/images/LEW02672.webp'
-  import img7 from '@/assets/images/LEW02696.webp'
-  import img8 from '@/assets/images/LEW02701.webp'
+  import img1 from '@/assets/images/album_1.jpeg'
+  import img2 from '@/assets/images/album_2.jpeg'
+  import img3 from '@/assets/images/save-the-date.webp'
+  import img4 from '@/assets/images/timeline.jpeg'
 
   const albumRepresent = ref([
     {
       id: 1,
-      className: 'object-[60%_50%]',
       img: img1
     },
     {
       id: 2,
-      className: 'object-top',
       img: img2
     },
     {
@@ -84,24 +55,8 @@
     },
     {
       id: 4,
-      img: img4
-    },
-    {
-      id: 5,
-      className: 'object-top',
-      img: img5
-    },
-    {
-      id: 6,
-      img: img6
-    },
-    {
-      id: 7,
-      img: img7
-    },
-    {
-      id: 8,
-      img: img8
+      img: img4,
+      className: 'object-[20%_10%]'
     }
   ])
 </script>
