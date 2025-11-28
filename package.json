@@ -1,0 +1,52 @@
+{
+  "name": "wedding-invitation",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",
+    "format": "prettier --write src/**/*.{vue,js,jsx,ts,tsx,css,md}"
+  },
+  "dependencies": {
+    "@imagekit/vue": "^4.0.0",
+    "@lottiefiles/lottie-player": "^2.0.12",
+    "@primeuix/themes": "^1.2.5",
+    "@primevue/forms": "^4.4.0",
+    "@tailwindcss/vite": "^4.1.6",
+    "firebase": "^12.3.0",
+    "gsap": "^3.13.0",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.4.0",
+    "swiper": "^11.2.6",
+    "tailwindcss": "^4.1.6",
+    "vue": "^3.5.13",
+    "vue-lazyload": "^3.0.0",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.26.0",
+    "@types/animejs": "^3.1.13",
+    "@types/node": "^24.6.2",
+    "@typescript-eslint/eslint-plugin": "^8.32.0",
+    "@typescript-eslint/parser": "^8.32.0",
+    "@vitejs/plugin-vue": "^5.2.3",
+    "@vue/eslint-config-typescript": "^14.5.0",
+    "@vue/tsconfig": "^0.7.0",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.26.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.4.0",
+    "eslint-plugin-vue": "^10.1.0",
+    "postcss": "^8.5.3",
+    "prettier": "^3.5.3",
+    "sass": "^1.88.0",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5",
+    "vite-imagetools": "^9.0.0",
+    "vue-tsc": "^2.2.8"
+  }
+}
