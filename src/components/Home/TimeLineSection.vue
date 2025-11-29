@@ -11,9 +11,9 @@
     </div>
 
     <div class="relative h-[580px] bg-img-gray pt-14">
-      <div class="px-8 mt-16">
+      <div class="px-8 mt-25">
         <template v-for="item in timeline" :key="item.id">
-          <div class="flex items-center justify-center" :class="item.id === 3 ? '' : 'mb-10'">
+          <div class="flex items-center justify-center" :class="item.id === 3 ? '' : 'mb-12'">
             <div class="max-w-[60px]">
               <img class="object-cover w-full h-full" :src="item.img" :alt="item.title" />
             </div>
@@ -48,28 +48,28 @@
   import { computed } from 'vue'
   import { useRoute } from 'vue-router'
   import gate from '@/assets/images/gate-timeline.png'
-  import ring from '@/assets/images/proposal-ring-timeline.png'
+  // import ring from '@/assets/images/proposal-ring-timeline.png'
   import champagne from '@/assets/images/champagne-timeline.png'
 
   const timelineGroom = [
     {
       id: 1,
       img: gate,
-      time: '18:00',
+      time: '16:00',
       title: 'Đón khách',
       description: 'Checkin và gửi lời chúc phúc đến CDCR'
     },
-    {
-      id: 2,
-      img: ring,
-      time: '18:30',
-      title: 'Lễ thành hôn',
-      description: 'Cùng nhau chứng kiến khoảnh khắc thiêng liêng cùng CDCR'
-    },
+    // {
+    //   id: 2,
+    //   img: ring,
+    //   time: '18:30',
+    //   title: 'Lễ thành hôn',
+    //   description: 'Cùng nhau chứng kiến khoảnh khắc thiêng liêng cùng CDCR'
+    // },
     {
       id: 3,
       img: champagne,
-      time: '18:45',
+      time: '17:00',
       title: 'Khai tiệc',
       description: 'Cùng nhau ăn tiệc và nâng ly chúc mừng CDCR'
     }
@@ -79,21 +79,21 @@
     {
       id: 1,
       img: gate,
-      time: '11:00',
+      time: '16:00',
       title: 'Đón khách',
       description: 'Checkin và gửi lời chúc phúc đến CDCR'
     },
-    {
-      id: 2,
-      img: ring,
-      time: '11:30',
-      title: 'Lễ vu quy',
-      description: 'Cùng nhau chứng kiến khoảnh khắc thiêng liêng cùng CDCR'
-    },
+    // {
+    //   id: 2,
+    //   img: ring,
+    //   time: '11:30',
+    //   title: 'Lễ vu quy',
+    //   description: 'Cùng nhau chứng kiến khoảnh khắc thiêng liêng cùng CDCR'
+    // },
     {
       id: 3,
       img: champagne,
-      time: '11:45',
+      time: '17:00',
       title: 'Khai tiệc',
       description: 'Cùng nhau ăn tiệc và nâng ly chúc mừng CDCR'
     }

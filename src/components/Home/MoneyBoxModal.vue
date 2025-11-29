@@ -44,8 +44,8 @@
 <script setup lang="ts">
   import { ref } from 'vue'
   import Dialog from 'primevue/dialog'
-  // import qrGroom from '@/assets/images/hau-qr.png'
-  // import qrBride from '@/assets/images/ngan-qr.png'
+  import qrGroom from '@/assets/images/hoang-qr.jpeg'
+  import qrBride from '@/assets/images/phuong-qr.jpeg'
   import { useToast } from 'primevue/usetoast'
 
   // Props
@@ -59,15 +59,15 @@
   const bankData = ref([
     {
       name: 'Chú rể',
-      bank: 'TPBank',
-      number: '???',
-      qr: ''
+      bank: 'BIDV',
+      number: '1182660133',
+      qr: qrGroom
     },
     {
       name: 'Cô dâu',
-      bank: 'TPBank',
-      number: '???',
-      qr: ''
+      bank: 'Vietinbank',
+      number: '103867740445',
+      qr: qrBride
     }
   ])
   const copyToClipboard = (number: string) => {

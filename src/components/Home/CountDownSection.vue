@@ -20,7 +20,7 @@
   const minutes = ref<number>(0)
   const seconds = ref<number>(0)
 
-  const targetDate = new Date(2025, 11, 7, 18, 0, 0, 0)
+  const targetDate = new Date(2025, 11, 7, 16, 0, 0, 0)
 
   let intervalId: number | undefined
 
