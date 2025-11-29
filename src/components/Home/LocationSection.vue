@@ -79,7 +79,7 @@
       day: '07',
       year: 'Năm 2025',
       date: '18 tháng 10 năm Ất Tỵ',
-      restaurant: 'Công ty TNHH Thanh Chuyên',
+      restaurant: 'Công ty TNHH Thanh Chuyển',
       address: 'Mỏ Chè, Sông Công, Thái Nguyên',
       map: 'https://maps.app.goo.gl/gqqXc3mPLYxsYKoQ9?g_st=ipc'
     }
